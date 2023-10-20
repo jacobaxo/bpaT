@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfQuizApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Quiz App" Height="350" Width="500">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Question 1: What is the capital of Germany?" FontSize="16" />
+            <RadioButton Content="Berlin" x:Name="Q1Option1" GroupName="Q1" />
+            <RadioButton Content="Madrid" x:Name="Q1Option2" GroupName="Q1" />
+            <RadioButton Content="Paris" x:Name="Q1Option3" GroupName="Q1" />
+            <TextBlock Text="Question 2: What is the capital of Portrigal?" FontSize="16" />
+            <RadioButton Content="London" x:Name="Q2Option1" GroupName="Q2" />
+            <RadioButton Content="Lima" x:Name="Q2Option2" GroupName="Q2" />
+            <RadioButton Content="Lisbon" x:Name="Q2Option3" GroupName="Q2" />
+            <TextBlock Text="Question 3: What is the capital of Brazil?" FontSize="16" />
+            <RadioButton Content="Braslia" x:Name="Q3Option1" GroupName="Q3" />
+            <RadioButton Content="Washington" x:Name="Q3Option2" GroupName="Q3" />
+            <RadioButton Content="Kabul" x:Name="Q3Option3" GroupName="Q3" />
+            <Button Content="Submit" Click="SubmitButton_Click" HorizontalAlignment="Center" Margin="10" />
+        </StackPanel>
+    </Grid>
+</Window>
+
